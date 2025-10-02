@@ -1,14 +1,19 @@
+body{
+    background: url(../img/deadpool-and-wolverine-in-a-movie_1920x1280.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+}
 .peliculas{
     display: grid;
     gap: 40px;
     grid-template-columns: repeat(3, minmax(250px, 600px));
     grid-template-rows: repeat(2, auto);
-
-    background-color: beige;
 }
 
 .peliculas .card{
-    background-color: rgb(127, 136, 136);
+    background-color: rgba(49, 49, 49, 0.604);
     display: flex;
     flex-direction: column;
 
@@ -31,6 +36,7 @@
 .peliculas .card .contenido{
     width: 100%;
     text-align: center;
+    color: white;
 }
 .peliculas .card .contenido p{
 
