@@ -1,10 +1,43 @@
 body{
-    background: linear-gradient(to bottom, black white), url(../img/deadpool-and-wolverine-in-a-movie_1920x1280.jpg);
+    background: linear-gradient(to top, rgba(36, 25, 25, 0.705), rgba(0, 0, 0, 0.897)),url('../img/deadpool-and-wolverine-in-a-movie_1920x1280.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100vh;
-    width: 100vw;
+    background-position: center;
+    min-height: 100vh;
 }
+nav { background:#000000d3; 
+}
+header{
+    position: sticky;
+    top: 0;
+}
+.logo{
+    color: aliceblue;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    margin-right: 100px;
+    margin-left: 100px;
+}
+
+nav ul{
+    list-style:none;
+    margin:0;
+    padding:10px 16px;
+    display:flex;          
+    gap: 20px;              
+    justify-content:center;
+    align-items:center;    
+    margin-right: 100px;
+}
+nav a{
+    color:rgb(151, 207, 235);
+    text-decoration:none;
+    font-family:system-ui, Arial, sans-serif;
+}
+nav a:hover{ text-decoration:underline; }
+
+
 .peliculas{
     display: grid;
     gap: 40px;
@@ -24,6 +57,8 @@ body{
 
 .peliculas .card .imagen{
     width: 80%;
+    min-height: 70%;
+    max-height: 70%;
 }
 
 .peliculas .card .imagen img{
@@ -39,5 +74,5 @@ body{
     color: white;
 }
 .peliculas .card .contenido p{
-
+    display: flex;
 }

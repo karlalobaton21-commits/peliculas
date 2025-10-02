@@ -1,18 +1,16 @@
-<<<<<<< HEAD
-.categorias{
-    background-color: rgb(187, 205, 205);
-    font-family: sans-serif;
-
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-
-=======
-
+body{
+    background: linear-gradient(to top, rgba(36, 25, 25, 0.705), rgba(0, 0, 0, 0.897)),url('../img/deadpool-and-wolverine-in-a-movie_1920x1280.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+}
 nav { background:#000000d3; 
 }
-
+header{
+    position: sticky;
+    top: 0;
+}
 .logo{
     color: aliceblue;
     font-size: 20px;
@@ -22,45 +20,45 @@ nav { background:#000000d3;
     margin-left: 100px;
 }
 
-    nav ul{
-        list-style:none;
-        margin:0;
-        padding:10px 16px;
-        display:flex;          
-        gap: 20px;              
-        justify-content:center;
-        align-items:center;    
-        margin-right: 100px;
-    }
-    nav a{
-        color:rgb(151, 207, 235);
-        text-decoration:none;
-        font-family:system-ui, Arial, sans-serif;
-    }
-    nav a:hover{ text-decoration:underline; }
+nav ul{
+    list-style:none;
+    margin:0;
+    padding:10px 16px;
+    display:flex;          
+    gap: 20px;              
+    justify-content:center;
+    align-items:center;    
+    margin-right: 100px;
+}
+nav a{
+    color:rgb(151, 207, 235);
+    text-decoration:none;
+    font-family:system-ui, Arial, sans-serif;
+}
+nav a:hover{ text-decoration:underline; }
 
-.galeria{
-    display: grid;
-    gap: 20px;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: auto;
+
+.categorias{
+    font-family: sans-serif;
+
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-
-    width: 80%;
-    justify-self: center;
-
->>>>>>> ad4de2cc3040ee067c4f4b31fc4ce7e011a97f10
 }
 
-.categorias .card{
-    background-color: rgb(161, 157, 164);
 
+
+
+.categorias .card{
+    background-color: rgba(49, 49, 49, 0.604);
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 30px;
     border-radius: 40px;
+
+    color: white;
 }
 
 .categorias .card .imagen{
