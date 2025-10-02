@@ -136,6 +136,10 @@ footer a:hover {
     
     /* --- Responsive --- */
 @media (max-width: 768px) {
+    .peliculas{
+        display: flex;
+        flex-direction: column;
+    }
     footer {
             flex-direction: column;
             text-align: center;

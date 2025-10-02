@@ -90,6 +90,8 @@ nav a:hover{ text-decoration:underline; }
 }
 
 
+
+
 footer {
     background: #000000d3;
     color: aliceblue;
@@ -134,6 +136,10 @@ footer a:hover {
     
     /* --- Responsive --- */
 @media (max-width: 768px) {
+    .peliculas{
+        display: flex;
+        flex-direction: column;
+    }
     footer {
             flex-direction: column;
             text-align: center;
