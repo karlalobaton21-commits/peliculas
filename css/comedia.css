@@ -10,6 +10,7 @@ nav { background:#000000d3;
 header{
     position: sticky;
     top: 0;
+    z-index: 99;
 }
 .logo{
     color: aliceblue;
@@ -38,6 +39,7 @@ nav a{
 nav a:hover{ text-decoration:underline; }
 
 
+
 .peliculas{
     display: grid;
     gap: 40px;
@@ -55,10 +57,13 @@ nav a:hover{ text-decoration:underline; }
     border-radius: 20px;
 }
 
+
+
 .peliculas .card .imagen{
     width: 80%;
     min-height: 70%;
     max-height: 70%;
+    margin-top: 30px;
 }
 
 .peliculas .card .imagen img{
@@ -68,14 +73,22 @@ nav a:hover{ text-decoration:underline; }
     border-radius: 20px;
 }
 
+.peliculas .card .imagen img:hover{
+    transform: scale(1.1);
+
+}
+
 .peliculas .card .contenido{
-    width: 100%;
     text-align: center;
     color: white;
+    margin: 10px 40px;
+
 }
 .peliculas .card .contenido p{
     display: flex;
+    overflow-y: scroll;
 }
+
 
 
 
