@@ -82,7 +82,9 @@ nav a:hover{ text-decoration:underline; }
     text-align: center;
     color: white;
     margin: 10px 40px;
+
 }
 .peliculas .card .contenido p{
     display: flex;
+    overflow-y: scroll;
 }
