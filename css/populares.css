@@ -1,5 +1,5 @@
 body{
-    background: linear-gradient(to bottom, black white), url(../img/deadpool-and-wolverine-in-a-movie_1920x1280.jpg);
+    background: url(../img/deadpool-and-wolverine-in-a-movie_1920x1280.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
