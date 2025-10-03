@@ -13,7 +13,6 @@ body{
 nav { background:#000000d3; 
 }
 header{
-
     position: sticky;
     top: 0;
     z-index: 99;
@@ -45,7 +44,12 @@ nav a{
 nav a:hover{ text-decoration:underline; }
 
 
-
+.titulo{
+    margin: 20px auto;
+    color: aliceblue;
+    font-size: 40px;
+    font-weight: bolder;
+}
 .series{
     display: grid;
     gap: 30px;

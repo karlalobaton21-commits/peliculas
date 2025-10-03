@@ -8,9 +8,15 @@ body{
     flex-direction: column;
     justify-content: space-between;
 }
+
 nav { background:#000000c5; 
 }
-
+nav { background:#000000d3; 
+}
+header{
+    position: sticky;
+    top: 0;
+}
 .logo{
     color: aliceblue;
     font-size: 20px;
@@ -36,6 +42,13 @@ nav a{
     font-family:system-ui, Arial, sans-serif;
 }
 nav a:hover{ text-decoration:underline; }
+
+.titulo{
+    margin: 20px auto;
+    color: aliceblue;
+    font-size: 40px;
+    font-weight: bolder;
+}
 .categorias{
     font-family: sans-serif;
 
@@ -61,22 +74,27 @@ nav a:hover{ text-decoration:underline; }
 }
 
 .categorias .card .imagen{
-    width: 400px;
+    width: 600px;
     height: 600px;
 
     margin-top: 20px;
 
-
+    display: flex;
 }
+
 .categorias .card .imagen img{
-    width: 400px;
+    min-width: 50px;
     height: 600px;
     object-fit: cover;
-    border-radius: 40px;
+
+    display: block;
+    flex: 1;
+    transition: 1s;
 }
 
 .categorias .card .imagen img:hover{
-    transform: scale(1.1);
+    flex: 4;
+    transform: none;
 }
 
 
