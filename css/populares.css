@@ -4,6 +4,9 @@ body{
     background-repeat: no-repeat;
     background-position: center;
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 nav { background:#000000d3; 
 }
@@ -43,18 +46,15 @@ nav a:hover{ text-decoration:underline; }
 .peliculas{
     display: grid;
     gap: 40px;
-    grid-template-columns: repeat(3, minmax(250px, 600px));
-    grid-template-rows: repeat(2, auto);
-    margin: 0 70px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-rows: repeat(auto, minmax(min-content, auto));
 }
 
 .peliculas .card{
     background-color: rgba(49, 49, 49, 0.604);
-    display: flex;
-    flex-direction: column;
-
-    align-items: center;
-    justify-content: flex-start;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(auto-fit, 1fr));
+    grid-template-rows: repeat(auto, minmax(min-content, auto));
     border-radius: 20px;
 }
 
@@ -62,9 +62,10 @@ nav a:hover{ text-decoration:underline; }
 
 .peliculas .card .imagen{
     width: 80%;
-    min-height: 70%;
-    max-height: 70%;
+    height: 400px;
     margin-top: 30px;
+
+    justify-self: center;
 }
 
 .peliculas .card .imagen img{
@@ -80,6 +81,9 @@ nav a:hover{ text-decoration:underline; }
 }
 
 .peliculas .card .contenido{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(auto, minmax(min-content, auto));
     text-align: center;
     color: white;
     margin: 10px 40px;
@@ -100,14 +104,14 @@ footer {
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
-    flex-wrap: wrap; 
+    flex-wrap: wrap; /* Para que se acomode en pantallas pequeñas */
     gap: 20px;
     font-family: system-ui, Arial, sans-serif;
 }
     
 footer div {
     flex: 1;
-    min-width: 220px; 
+    min-width: 220px; /* Se acomodan en columna cuando no caben */
 }
     
 footer p {
@@ -126,8 +130,8 @@ footer ul li {
     
 footer a {
     color: rgb(151, 207, 235);
-    margin-right: 17px;
-    font-size: 20px;
+    margin-right: 12px;
+    font-size: 17px;
     transition: color 0.3s ease;
     text-decoration: none;
 }
@@ -138,10 +142,6 @@ footer a:hover {
     
     /* --- Responsive --- */
 @media (max-width: 768px) {
-    .peliculas{
-        display: flex;
-        flex-direction: column;
-    }
     footer {
             flex-direction: column;
             text-align: center;
