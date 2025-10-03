@@ -5,6 +5,8 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    font-family: sans-serif;
 }
 nav { background:#000000d3; 
 }
@@ -38,7 +40,12 @@ nav a{
 }
 nav a:hover{ text-decoration:underline; }
 
-
+.titulo{
+    margin: 20px auto;
+    color: aliceblue;
+    font-size: 40px;
+    font-weight: bolder;
+}
 .categorias{
     font-family: sans-serif;
 
