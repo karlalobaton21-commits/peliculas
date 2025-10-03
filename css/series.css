@@ -1,0 +1,28 @@
+nav { background:#000000c5; 
+}
+
+.logo{
+    color: aliceblue;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    margin-right: 100px;
+    margin-left: 100px;
+}
+
+nav ul{
+    list-style:none;
+    margin:0;
+    padding:10px 16px;
+    display:flex;          
+    gap: 20px;              
+    justify-content:center;
+    align-items:center;    
+    margin-right: 100px;
+}
+nav a{
+    color:rgb(151, 207, 235);
+    text-decoration:none;
+    font-family:system-ui, Arial, sans-serif;
+}
+nav a:hover{ text-decoration:underline; }

@@ -82,7 +82,66 @@ nav a:hover{ text-decoration:underline; }
     text-align: center;
     color: white;
     margin: 10px 40px;
+
 }
 .peliculas .card .contenido p{
     display: flex;
+    overflow-y: scroll;
+}
+
+
+
+
+footer {
+    background: #000000d3;
+    color: aliceblue;
+    padding: 30px 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap; /* Para que se acomode en pantallas pequeñas */
+    gap: 20px;
+    font-family: system-ui, Arial, sans-serif;
+}
+    
+footer div {
+    flex: 1;
+    min-width: 220px; /* Se acomodan en columna cuando no caben */
+}
+    
+footer p {
+    margin: 8px 0;
+}
+    
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+    
+footer ul li {
+    margin-bottom: 6px;
+}
+    
+footer a {
+    color: rgb(151, 207, 235);
+    margin-right: 12px;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+    
+footer a:hover {
+    color: #ffffff;
+}
+    
+    /* --- Responsive --- */
+@media (max-width: 768px) {
+    footer {
+            flex-direction: column;
+            text-align: center;
+    }
+    
+    footer a {
+            margin: 0 8px;
+    }
 }
