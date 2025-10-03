@@ -49,10 +49,9 @@ nav a:hover{ text-decoration:underline; }
 .categorias{
     font-family: sans-serif;
 
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+    grid-template-rows: repeat(auto, minmax(min-content, auto));
 }
 
 
