@@ -26,3 +26,108 @@ nav a{
     font-family:system-ui, Arial, sans-serif;
 }
 nav a:hover{ text-decoration:underline; }
+.categorias{
+    font-family: sans-serif;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+.categorias .card{
+    background-color: rgba(49, 49, 49, 0.604);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px;
+    border-radius: 40px;
+    color: white;
+
+    height: 80%;
+}
+
+.categorias .card .imagen{
+    width: 400px;
+    height: 600px;
+
+    margin-top: 20px;
+
+
+}
+.categorias .card .imagen img{
+    width: 400px;
+    height: 600px;
+    object-fit: cover;
+    border-radius: 40px;
+}
+
+.categorias .card .imagen img:hover{
+    transform: scale(1.1);
+}
+
+
+
+
+
+footer {
+    background: #000000d3;
+    color: aliceblue;
+    padding: 30px 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap; 
+    gap: 20px;
+    font-family: system-ui, Arial, sans-serif;
+}
+    
+footer div {
+    flex: 1;
+    min-width: 220px;
+}
+    
+footer p {
+    margin: 8px 0;
+}
+    
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+    
+footer ul li {
+    margin-bottom: 6px;
+}
+    
+footer a {
+    color: rgb(151, 207, 235);
+    margin-right: 12px;
+    font-size: 17px;
+    transition: color 0.3s ease;
+    text-decoration: none;
+}
+    
+footer a:hover {
+    color: aqua;
+}
+    
+    
+@media (max-width: 768px) {
+    body{
+        display: flex;
+        flex-direction: column;
+    }
+    footer {
+            flex-direction: column;
+            text-align: center;
+    }
+    
+    footer a {
+            margin: 0 8px;
+    }
+}
