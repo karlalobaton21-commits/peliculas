@@ -45,6 +45,8 @@ nav a:hover{ text-decoration:underline; }
     gap: 40px;
     grid-template-columns: repeat(3, minmax(250px, 600px));
     grid-template-rows: repeat(2, auto);
+
+    margin: 0 70px;
 }
 
 .peliculas .card{
