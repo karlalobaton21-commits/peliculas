@@ -84,6 +84,7 @@ nav a:hover{ text-decoration:underline; }
     height: 600px;
     object-fit: cover;
 
+    
     display: block;
     flex: 1;
     transition: 1s;
