@@ -99,14 +99,14 @@ footer {
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
-    flex-wrap: wrap; /* Para que se acomode en pantallas pequeñas */
+    flex-wrap: wrap; 
     gap: 20px;
     font-family: system-ui, Arial, sans-serif;
 }
     
 footer div {
     flex: 1;
-    min-width: 220px; /* Se acomodan en columna cuando no caben */
+    min-width: 220px; 
 }
     
 footer p {
@@ -125,13 +125,14 @@ footer ul li {
     
 footer a {
     color: rgb(151, 207, 235);
-    margin-right: 12px;
+    margin-right: 17px;
     font-size: 20px;
     transition: color 0.3s ease;
+    text-decoration: none;
 }
     
 footer a:hover {
-    color: #ffffff;
+    color: aqua;
 }
     
     /* --- Responsive --- */
