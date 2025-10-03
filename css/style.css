@@ -7,6 +7,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
 }
 nav { background:#000000d3; 
 }
@@ -27,7 +28,7 @@ nav ul{
     display:flex;          
     gap: 20px;              
     justify-content:center;
-    align-items:center;    
+
     margin-right: 100px;
 }
 nav a{
@@ -43,8 +44,22 @@ nav a:hover{ text-decoration:underline; }
     background-color: rgba(250, 235, 215, 0.11);
     color: aliceblue;
     text-align: center;
+    
+}
+.botones button{
+    margin: 10px;
+    border-radius: 40px;
+    padding: 10px 40px;
+    background-color: rgba(0, 0, 0, 0.233);
+    color: rgb(240, 248, 255);
+    font-weight: bolder;
+
 }
 
+.botones button:hover{
+    background-color: rgb(255, 172, 18);
+    color: rgb(0, 0, 0);
+}
 footer {
     background: #000000d3;
     color: aliceblue;
