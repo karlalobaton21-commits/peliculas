@@ -7,6 +7,8 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    font-family: sans-serif;
 }
 nav { background:#000000d3; 
 }
@@ -45,8 +47,8 @@ nav a:hover{ text-decoration:underline; }
 
 .peliculas{
     display: grid;
-    gap: 40px;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     grid-template-rows: repeat(auto, minmax(min-content, auto));
 }
 
@@ -62,10 +64,11 @@ nav a:hover{ text-decoration:underline; }
 
 .peliculas .card .imagen{
     width: 80%;
-    height: 400px;
-    margin-top: 30px;
+    height: 600px;
 
     justify-self: center;
+
+    margin: 30px 0;
 }
 
 .peliculas .card .imagen img{
@@ -76,22 +79,29 @@ nav a:hover{ text-decoration:underline; }
 }
 
 .peliculas .card .imagen img:hover{
+
     transform: scale(1.1);
 
 }
 
-.peliculas .card .contenido{
+.peliculas .card{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(auto, minmax(min-content, auto));
     text-align: center;
     color: white;
-    margin: 10px 40px;
 
+}
+
+.peliculas .card .contenido{
+    margin: 10px 30px;
 }
 .peliculas .card .contenido p{
     display: flex;
     overflow-y: scroll;
+    color: lightgray;
+
+    padding: 10px 30px;
 }
 
 
