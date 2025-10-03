@@ -44,7 +44,12 @@ nav a{
 nav a:hover{ text-decoration:underline; }
 
 
-
+.titulo{
+    margin: 20px auto;
+    color: aliceblue;
+    font-size: 40px;
+    font-weight: bolder;
+}
 .peliculas{
     display: grid;
     gap: 30px;
