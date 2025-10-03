@@ -91,8 +91,19 @@ footer a:hover {
     /* --- Responsive --- */
 @media (max-width: 768px) {
     footer {
-            flex-direction: column;
-            text-align: center;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        color: lightslategray;
+    }
+
+    footer p{
+        font-weight: bolder;
+        color: aliceblue;
+    }
+
+    footer ul li{
+
     }
     
     footer a {
