@@ -9,7 +9,9 @@ body{
     justify-content: space-between;
     align-items: center;
 }
-nav { background:#000000d3; 
+header {
+    width: 100%;
+    background:#000000d3; 
 }
 
 .logo{
@@ -67,14 +69,15 @@ footer {
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
-    flex-wrap: wrap; 
+    flex-wrap: wrap; /* Para que se acomode en pantallas pequeñas */
     gap: 20px;
     font-family: system-ui, Arial, sans-serif;
+    width: 100%;
 }
     
 footer div {
     flex: 1;
-    min-width: 220px; 
+    min-width: 220px; /* Se acomodan en columna cuando no caben */
 }
     
 footer p {
@@ -106,15 +109,8 @@ footer a:hover {
     /* --- Responsive --- */
 @media (max-width: 768px) {
     footer {
-        flex-direction: column;
-        justify-content: center;
-        align-content: center;
-        color: lightslategray;
-    }
-
-    footer p{
-        font-weight: bolder;
-        color: aliceblue;
+            flex-direction: column;
+            text-align: center;
     }
     
     footer a {
