@@ -1,12 +1,15 @@
 body{
-    background: linear-gradient(to top, rgba(36, 25, 25, 0.705), rgba(0, 0, 0, 0.897)),url('../img/deadpool-and-wolverine-in-a-movie_1920x1280.jpg');
+    background: linear-gradient(to top, rgba(36, 25, 25, 0.705), rgba(0, 0, 0, 0.897)),url('../img/fondooo.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
 
-    font-family: sans-serif;
+nav { background:#000000c5; 
 }
 nav { background:#000000d3; 
 }
@@ -49,9 +52,10 @@ nav a:hover{ text-decoration:underline; }
 .categorias{
     font-family: sans-serif;
 
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
-    grid-template-rows: repeat(auto, minmax(min-content, auto));
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -65,35 +69,33 @@ nav a:hover{ text-decoration:underline; }
     margin: 30px;
     border-radius: 40px;
     color: white;
+
+    height: 80%;
 }
 
+.categorias .card .imagen .r{
+    border-radius: 0  0 40px 0;
+}
+.categorias .card .imagen .l{
+    border-radius: 0  0 0 40px;
+}
 .categorias .card .imagen{
-    width: 50%;
-    height: auto;
-    justify-self: center;
+    width: 600px;
+    height: 600px;
 
     margin-top: 20px;
 
     display: flex;
-
-    border-radius: 50px;
 }
 
 .categorias .card .imagen img{
     min-width: 50px;
-    height: 700px;
+    height: 600px;
     object-fit: cover;
 
-    
     display: block;
     flex: 1;
     transition: 1s;
-}
-.categorias .card .imagen .l{
-    border-radius: 40px 0 0 40px;
-}
-.categorias .card .imagen .r{
-    border-radius: 0  40px 40px 0;
 }
 
 .categorias .card .imagen img:hover{
@@ -150,8 +152,9 @@ footer a:hover {
     
     
 @media (max-width: 768px) {
-
-    .categorias{
+    body{
+        display: flex;
+        flex-direction: column;
     }
     footer {
             flex-direction: column;

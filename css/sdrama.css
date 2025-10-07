@@ -53,7 +53,7 @@ nav a:hover{ text-decoration:underline; }
 .series{
     display: grid;
     gap: 30px;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(400px, 100%), 1fr));
     grid-template-rows: repeat(auto, minmax(min-content, auto));
 }
 

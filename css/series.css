@@ -91,6 +91,12 @@ nav a:hover{ text-decoration:underline; }
     flex: 1;
     transition: 1s;
 }
+.categorias .card .imagen .r{
+    border-radius: 0  0 40px 0;
+}
+.categorias .card .imagen .l{
+    border-radius: 0  0 0 40px;
+}
 
 .categorias .card .imagen img:hover{
     flex: 4;
