@@ -1,3 +1,17 @@
+#menu-toggle{
+    display: none;
+}
+
+.menu-icon{
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #ffffff;
+    margin-left: auto;
+    border-radius: 20px;
+}
+
+
 body{
     background: linear-gradient(to top, rgba(36, 25, 25, 0.705), rgba(0, 0, 0, 0.897)),url('../img/deadpool-and-wolverine-in-a-movie_1920x1280.jpg');
     background-size: cover;
@@ -8,10 +22,15 @@ body{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    margin: 0;
 }
 header {
+    height: 100px;
     width: 100%;
-    background:#000000d3; 
+    background:#000000d3;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .logo{
@@ -19,19 +38,14 @@ header {
     font-size: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: bold;
-    margin-right: 100px;
-    margin-left: 100px;
+    width: 200px;
 }
 
 nav ul{
     list-style:none;
-    margin:0;
-    padding:10px 16px;
     display:flex;          
     gap: 20px;              
     justify-content:center;
-
-    margin-right: 100px;
 }
 nav a{
     color:rgb(151, 207, 235);
@@ -41,7 +55,7 @@ nav a{
 nav a:hover{ text-decoration:underline; }
 
 .texto{
-    margin: 70px 20px;
+    margin: 70px 100px;
     padding: 0 100px;
     background-color: rgba(250, 235, 215, 0.11);
     color: aliceblue;
@@ -67,8 +81,7 @@ footer {
     color: aliceblue;
     padding: 30px 20px;
     display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
+
     flex-wrap: wrap; /* Para que se acomode en pantallas pequeñas */
     gap: 20px;
     font-family: system-ui, Arial, sans-serif;
@@ -108,6 +121,54 @@ footer a:hover {
     
     /* --- Responsive --- */
 @media (max-width: 768px) {
+    nav{
+        position: relative;
+    }
+
+    header .logo{
+        margin-left: 30px;
+    }
+
+    #menu-toggle{
+        display: none;
+    }
+
+    .menu-icon{
+        display: flex;
+        font-size: 28px;
+        cursor: pointer;
+        margin-right: 40px;
+
+    }
+
+    header nav ul{
+        display: none;
+
+        position: absolute;
+
+        top: 50px;
+        right: 20px;
+
+        padding: 20px;
+        background-color: rgba(191, 175, 175, 0.4);
+        width: 100px;
+        border-radius: 6px;
+        box-shadow: 0 4px 10px rgb(0, 0, 0, 0.4);
+        z-index: 999999;
+    }
+
+    header nav ul li{
+        margin: auto;
+    }
+
+    header #menu-toggle:checked ~ nav ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+
+
     footer {
             flex-direction: column;
             text-align: center;

@@ -9,13 +9,15 @@ body{
     justify-content: space-between;
 }
 
-nav { background:#000000c5; 
-}
-nav { background:#000000d3; 
-}
 header{
     position: sticky;
     top: 0;
+    height: 100px;
+    width: 100%;
+    background:#000000d3;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 .logo{
     color: aliceblue;
@@ -91,12 +93,7 @@ nav a:hover{ text-decoration:underline; }
     flex: 1;
     transition: 1s;
 }
-.categorias .card .imagen .r{
-    border-radius: 0  0 40px 0;
-}
-.categorias .card .imagen .l{
-    border-radius: 0  0 0 40px;
-}
+
 
 .categorias .card .imagen img:hover{
     flex: 4;
@@ -112,7 +109,6 @@ footer {
     color: aliceblue;
     padding: 30px 20px;
     display: flex;
-    justify-content: space-around;
     align-items: flex-start;
     flex-wrap: wrap; 
     gap: 20px;
@@ -124,23 +120,13 @@ footer div {
     min-width: 220px;
 }
     
-footer p {
-    margin: 8px 0;
-}
     
 footer ul {
     list-style: none;
-    padding: 0;
-    margin: 0;
 }
-    
-footer ul li {
-    margin-bottom: 6px;
-}
-    
+
 footer a {
     color: rgb(151, 207, 235);
-    margin-right: 12px;
     font-size: 17px;
     transition: color 0.3s ease;
     text-decoration: none;
@@ -157,11 +143,16 @@ footer a:hover {
         flex-direction: column;
     }
     footer {
-            flex-direction: column;
-            text-align: center;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
     }
-    
+    footer div{
+        flex-direction: column;
+    }
+
     footer a {
-            margin: 0 8px;
+        margin: 0 8px;
     }
 }

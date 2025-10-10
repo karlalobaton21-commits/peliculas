@@ -10,12 +10,16 @@ body{
 
     font-family: sans-serif;
 }
-nav { background:#000000d3; 
-}
+
 header{
     position: sticky;
     top: 0;
-    z-index: 99;
+    height: 100px;
+    width: 100%;
+    background:#000000d3;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 .logo{
     color: aliceblue;

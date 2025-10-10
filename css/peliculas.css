@@ -1,3 +1,16 @@
+#menu-toggle{
+    display: none;
+}
+
+.menu-icon{
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #ffffff;
+    margin-left: auto;
+    border-radius: 20px;
+}
+
 body{
     background: linear-gradient(to top, rgba(36, 25, 25, 0.705), rgba(0, 0, 0, 0.897)),url('../img/fondooo.jpg');
     background-size: cover;
@@ -9,14 +22,21 @@ body{
     justify-content: space-between;
 }
 
-nav { background:#000000c5; 
-}
-nav { background:#000000d3; 
-}
+
+
 header{
     position: sticky;
     top: 0;
+    height: 100px;
+    width: 100%;
+    background:#000000d3;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
+
+
+
 .logo{
     color: aliceblue;
     font-size: 20px;
@@ -52,6 +72,8 @@ nav a:hover{ text-decoration:underline; }
 .categorias{
     font-family: sans-serif;
 
+
+
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -71,6 +93,7 @@ nav a:hover{ text-decoration:underline; }
     color: white;
 
     height: 80%;
+    width: min(1fr, 100%);
 }
 
 .categorias .card .imagen .r{
@@ -112,6 +135,7 @@ footer {
     color: aliceblue;
     padding: 30px 20px;
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     align-items: flex-start;
     flex-wrap: wrap; 
@@ -156,12 +180,63 @@ footer a:hover {
         display: flex;
         flex-direction: column;
     }
+    nav{
+        position: relative;
+    }
+
+    header .logo{
+        margin-left: 30px;
+    }
+
+    #menu-toggle{
+        display: none;
+    }
+
+    .menu-icon{
+        display: flex;
+        font-size: 28px;
+        cursor: pointer;
+        margin-right: 40px;
+
+    }
+
+    header nav ul{
+        display: none;
+
+        position: absolute;
+
+        top: 50px;
+        right: 20px;
+
+        padding: 20px;
+        background-color: rgba(191, 175, 175, 0.4);
+        width: 100px;
+        border-radius: 6px;
+        box-shadow: 0 4px 10px rgb(0, 0, 0, 0.4);
+        z-index: 999999;
+    }
+
+    header nav ul li{
+        margin: auto;
+    }
+
+    header #menu-toggle:checked ~ nav ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
     footer {
-            flex-direction: column;
-            text-align: center;
+        flex-direction: column;
+        text-align: center;
     }
     
     footer a {
-            margin: 0 8px;
+        margin: 0 8px;
+    }
+
+    footer div{
+        display: block;
+        margin: 0 auto;
     }
 }
