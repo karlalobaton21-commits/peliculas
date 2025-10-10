@@ -142,17 +142,19 @@ footer a:hover {
         display: flex;
         flex-direction: column;
     }
+
+    
     footer {
-        display: flex;
         flex-direction: column;
         text-align: center;
-
     }
-    footer div{
-        flex-direction: column;
-    }
-
+    
     footer a {
         margin: 0 8px;
+    }
+
+    footer div{
+        display: block;
+        margin: 0 auto;
     }
 }
