@@ -1,3 +1,7 @@
+*{
+    box-sizing: border-box;
+}
+
 #menu-toggle{
     display: none;
 }
@@ -22,8 +26,6 @@ body{
     justify-content: space-between;
 }
 
-
-
 header{
     position: sticky;
     top: 0;
@@ -34,9 +36,6 @@ header{
     justify-content: space-evenly;
     align-items: center;
 }
-
-
-
 .logo{
     color: aliceblue;
     font-size: 20px;
@@ -72,8 +71,6 @@ nav a:hover{ text-decoration:underline; }
 .categorias{
     font-family: sans-serif;
 
-
-
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -93,15 +90,8 @@ nav a:hover{ text-decoration:underline; }
     color: white;
 
     height: 80%;
-    width: min(1fr, 100%);
 }
 
-.categorias .card .imagen .r{
-    border-radius: 0  0 40px 0;
-}
-.categorias .card .imagen .l{
-    border-radius: 0  0 0 40px;
-}
 .categorias .card .imagen{
     width: 600px;
     height: 600px;
@@ -121,6 +111,7 @@ nav a:hover{ text-decoration:underline; }
     transition: 1s;
 }
 
+
 .categorias .card .imagen img:hover{
     flex: 4;
     transform: none;
@@ -135,8 +126,6 @@ footer {
     color: aliceblue;
     padding: 30px 20px;
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
     align-items: flex-start;
     flex-wrap: wrap; 
     gap: 20px;
@@ -148,23 +137,13 @@ footer div {
     min-width: 220px;
 }
     
-footer p {
-    margin: 8px 0;
-}
     
 footer ul {
     list-style: none;
-    padding: 0;
-    margin: 0;
 }
-    
-footer ul li {
-    margin-bottom: 6px;
-}
-    
+
 footer a {
     color: rgb(151, 207, 235);
-    margin-right: 12px;
     font-size: 17px;
     transition: color 0.3s ease;
     text-decoration: none;
@@ -180,7 +159,8 @@ footer a:hover {
         display: flex;
         flex-direction: column;
     }
-    nav{
+
+        nav{
         position: relative;
     }
 
@@ -207,10 +187,10 @@ footer a:hover {
 
         top: 50px;
         right: 20px;
+
         padding: 20px;
-        
         background-color: rgba(191, 175, 175, 0.4);
-        width: 100px;
+        width: 130px;
         border-radius: 6px;
         box-shadow: 0 4px 10px rgb(0, 0, 0, 0.4);
         z-index: 999999;
@@ -226,6 +206,7 @@ footer a:hover {
         justify-content: center;
     }
 
+    
     footer {
         flex-direction: column;
         text-align: center;

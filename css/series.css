@@ -1,3 +1,20 @@
+*{
+    box-sizing: border-box;
+}
+
+#menu-toggle{
+    display: none;
+}
+
+.menu-icon{
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #ffffff;
+    margin-left: auto;
+    border-radius: 20px;
+}
+
 body{
     background: linear-gradient(to top, rgba(36, 25, 25, 0.705), rgba(0, 0, 0, 0.897)),url('../img/fondooo.jpg');
     background-size: cover;
@@ -141,6 +158,52 @@ footer a:hover {
     body{
         display: flex;
         flex-direction: column;
+    }
+
+        nav{
+        position: relative;
+    }
+
+    header .logo{
+        margin-left: 30px;
+    }
+
+    #menu-toggle{
+        display: none;
+    }
+
+    .menu-icon{
+        display: flex;
+        font-size: 28px;
+        cursor: pointer;
+        margin-right: 40px;
+
+    }
+
+    header nav ul{
+        display: none;
+
+        position: absolute;
+
+        top: 50px;
+        right: 20px;
+
+        padding: 20px;
+        background-color: rgba(191, 175, 175, 0.4);
+        width: 130px;
+        border-radius: 6px;
+        box-shadow: 0 4px 10px rgb(0, 0, 0, 0.4);
+        z-index: 999999;
+    }
+
+    header nav ul li{
+        margin: auto;
+    }
+
+    header #menu-toggle:checked ~ nav ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 
     
